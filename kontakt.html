@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body class="kontakt">
+    
+      <!--Navigation-->
+    <header>
+        <nav>
+
+            <!--Logo-->
+            <h1><a href="index.html">Grøn Hverdag</a></h1> 
+
+            <!--Mobilversion burger-->
+            <label for="menu-toggle" class="burger">☰</label>
+            <input type="checkbox" id="menu-toggle">
+
+            <!--Mobilversion menu-->
+            <ul class="mobil-menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="genbrug.html">Om tekstilgenbrug</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+
+            <!--Desktop menu-->
+            <ul class="desktop-menu">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="genbrug.html">Om tekstilgenbrug</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main class="kontaktform">
+        <h2>Kontakt os</h2>
+           
+
+
+            <!--Kontaktinformationer-->
+            <section class="kontakt-info">
+                <p>Telefon: 10 10 10 10</p>
+                <p>Email: grønhverdag@genbrug.dk</p>
+                <p>Adresse: Genbrugsvænget 25, 1010 Grønninge</p>
+            </section>
+
+             <p class="kontakt-tekst">Skriv til os via kontaktformularen og så vender vi tilbage til dig</p>
+            <!--Kontaktformular-->
+            <form>
+
+                <label for="navn">Navn</label>
+                <input id="navn" type="text" required>
+
+                 <label for="mail">E-mail</label>
+                <input id="mail" type="email" required>
+
+                 <label for="tel">Telefon</label>
+                <input id="tel" type="tel" required>
+
+                 <label for="adresse">Adresse</label>
+                <input id="adresse" type="text" required>
+
+                <!--Dropdown-->
+                <div class="custom-select">
+                    <label for="region">Vælg region</label>
+                    <select id="region">
+                        <option value="0" selected="true" disabled>Vælg region</option>
+                        <option value="1">Hovedstaden</option>
+                        <option value="2">Midtjylland</option>
+                        <option value="3">Nordjylland</option>
+                        <option value="4">Sjælland</option>
+                        <option value="5">Syddanmark</option>
+                        </select>
+                </div>
+
+                <!--Checkbox af services-->
+                <fieldset class="checkbox">
+                    <legend> Hvad ønsker du mere information om?</legend>
+                    <div>
+                        <input type="checkbox" id="genanvendelse">
+                        <label for="genanvendelse">Genanvendelse af tekstiler</label>
+                    </div>
+                    
+                     <div>
+                        <input type="checkbox" id="gensalg">
+                        <label for="gensalg">Gensalg af brugt tøj og sko</label>
+                    </div>
+                    
+                      <div>
+                        <input type="checkbox" id="donation">
+                        <label for="donation">Donation af brugte tekstiler</label>
+                    </div>
+                    
+                </fieldset>
+
+                <label for="besked">Besked</label>
+                <textarea id="besked" cols="30" rows="10"></textarea>
+                <fieldset>
+                    <legend>Må vi kontakte dig på telefon? </legend>
+                   
+                    <input id="ja" type="radio" name="kontakt">
+                    <label for="ja">Ja</label>
+
+                    <input id="nej" type="radio" name="kontakt">
+                    <label for="nej">Nej</label> 
+                </fieldset>
+
+                <input type="submit" name="submit" value="Send besked">
+            </form>
+            
+
+
+    </main>
+    
+
+</body>
+</html>

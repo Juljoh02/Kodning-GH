@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    background-color: #E7EBD0;
+    
+  
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: column; /*Børn (h1 + menu) lægges lodret*/
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+ nav h1{
+    align-self: center;
+ }
+
+h1 a{color: #4D732B;
+    text-decoration: none;
+
+    }
+
+
+
+ul{
+    list-style-type: none; /*Fjerner bulletpoints på listen*/
+    gap: 1em;
+    padding: 0;
+}
+
+li a{
+    color: #4D732B;
+    text-decoration: none; /*Fjerner streg under links*/
+}
+
+/*Mobilversion styling*/
+.desktop-menu {
+    display: none;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.burger {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    color: #8F1F6C;
+    user-select: none;
+    position: absolute;
+    right: 20px;
+
+}
+
+/*skjult checkbox**/
+#menu-toggle {
+    display: none;
+}
+
+.mobil-menu {
+    display: none;
+    flex-direction: column;
+    
+}
+/*Menu vises når der trykkes på  burger*/ 
+#menu-toggle:checked + .mobil-menu {
+    display: flex;}
+
+
+
+/*Desktop styling*/
+@media screen and (min-width:769px) {
+    .desktop-menu {
+        display: flex;
+        justify-content:flex-start;
+    }
+
+.burger {
+    display: none;
+}
+
+.mobil-menu {
+    display: none;
+}
+
+}
+
+
+
+
+.forside{
+
+/*Styling af siden, forside*/
+main {
+    background-color: #F1EBE3;
+}
+main {
+    background-color: #F1EBE3;
+}
+
+h2{
+    color: #8F1F6C;
+     line-height: 1.5;
+     margin-bottom: 0.5em;
+
+}
+
+h3{
+    color: #4D732B;
+     line-height: 1.5;
+}
+
+p{
+    color: #4D732B;
+    line-height: 1.5;
+    margin-bottom: 3em;
+}
+
+.container1 img {
+    display: block;
+    justify-content: flex-start;
+    border: 5px solid #8F1F6C;
+    width: 100vw;
+    height: auto;
+   
+  
+}
+
+.container2 img{
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
+    height: auto;
+   
+}
+
+.container3 img {
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
+    height: auto;
+   
+}
+
+img{
+   max-width: 100%;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 5em;
+    
+}
+
+
+}
+
+
+.genbrug{
+
+    /*Styling af siden, om tekstilgenbrug*/
+body{
+    background-color: #F1EBE3;
+}
+main{
+    background-color: #F1EBE3;
+}
+h2{
+    color: #8F1F6C;
+     line-height: 1.5;
+     margin-bottom: 0.5em;
+  
+
+}
+
+h3{
+    color: #4D732B;
+     line-height: 1.5;
+    
+}
+
+p{
+    color: #4D732B;
+    line-height: 1.5;
+    margin-top: 2em;
+    margin-bottom: 3em;
+  
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    height: 300px;
+}
+
+@media screen and (min-width:769px)  {
+  img{
+    height: 50vh;
+    object-fit: cover;
+    width: 100%;
+    position:relative;
+  }  
+} 
+
+
+.tekstboks{
+    background-color: #E7EBD0;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: -4em;
+    position: relative;
+
+    
+}
+
+}
+
+
+
+.kontakt {
+
+.kontaktform {}
+
+.kontakt-info{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.kontakt-info p{
+    
+    line-height: 2;
+    margin: 0;
+    
+}
+p{
+        line-height: 1.5;
+        margin-bottom: 2em;
+}
+
+.kontaktform
+    {
+  border-radius: 5px;
+  background-color: #E7EBD0;
+  padding: 1.3em;
+  width: 60%;
+  margin: 0 auto; /*Centrerer elementet på siden*/
+  margin-top: 3em;
+  position: relative;
+  border: 2px solid #8F1F6C;
+}
+
+h2{
+    color: #4D732B;
+}
+
+p{
+    color: #4D732B;
+
+}
+
+input[type=text], input[type=email], input[type=tel]
+{
+    width: 100%; 
+    padding: 1em;
+    border: 1px solid #4D732B;
+    border-radius:4px ;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    
+}
+
+select, input[type=checkbox], input[type=radio], input[type=submit]{
+    cursor: pointer;
+
+}
+
+fieldset{
+    border-color: #8F1F6C;
+    border-style: dotted;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: #4D732B;
+}
+
+input[type=checkbox] {
+    margin: 1em;
+}
+
+input[type=submit] {
+    background-color: #8F1F6C;
+    color: white;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 18px;
+
+}
+input[type=submit]:hover{
+    background-color: #923d77;
+}
+
+label{
+    color: #4D732B;
+}
+
+
+.custom-select{
+    color: #4D732B;
+}
+
+textarea{
+    width: 100%;
+    border-radius: 4%;
+    border: 1px solid #4D732B;
+ }
+}
+
+body.kontakt{
+    background-color: #F1EBE3;
+}
